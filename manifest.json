@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Retina Yammer",
+  "description": "Yammer, looking pretty on retina displays.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.yammer.com/*"],
+      "css": [ "retinayammer.css" ]
+    }
+  ],
+
+  "permissions": [
+    "webRequest", "webRequestBlocking", "https://mug0.assets-yammer.com/*"
+  ],
+
+  "background": {
+    "scripts": ["retinayammer.js"]
+  }
+}
