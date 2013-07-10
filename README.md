@@ -1,0 +1,1 @@
+Chrome plugin to make Yammer use Retina mugshots.
